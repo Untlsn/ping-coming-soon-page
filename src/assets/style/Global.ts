@@ -6,10 +6,23 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    font-family: Roboto, sans-serif;
+    font-family: Libre Franklin, sans-serif;
     margin: 0;
     min-height: 100vh;
     color: ${({ theme }) => theme.colors.black};
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (orientation: portrait) {
+      font-size: .7em;
+    }
+  }
+  
+  html {
+    font-size: 20px;
   }
   
   a {

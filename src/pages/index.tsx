@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleProvider } from '@providers/all';
+import { SideTop, SideBottom } from '@organisms/all';
 
-const robotoUrl = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+const libreFranklinUrl = 'https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;900&display=swap';
 
 const Home = () => {
   return (
-    <StyleProvider fonts={[robotoUrl]}>
-      <div>Hello World!</div>
+    <StyleProvider fonts={[libreFranklinUrl]}>
+      <SideTop />
+      <SideBottom />
     </StyleProvider>
   );
 };

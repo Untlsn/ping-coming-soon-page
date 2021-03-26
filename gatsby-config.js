@@ -1,11 +1,17 @@
-const aliases = require('./gatsby-aliases');
-
 module.exports = {
   siteMetadata: {
     title: 'profile-card-component',
   },
   plugins: [
     'gatsby-plugin-styled-components',
-    aliases
+    require('./gatsby-aliases'),
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.svg$/
+        }
+      }
+    }
   ],
 };
