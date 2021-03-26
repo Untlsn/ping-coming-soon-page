@@ -6,9 +6,9 @@ const Medias = () => {
   return (
     <div>
       <S.IconWrapper>
-        <I.facebookIcon />
-        <I.twitterIcon />
-        <I.instagramIcon />
+        <S.Icon><I.facebookIcon /></S.Icon>
+        <S.Icon><I.twitterIcon /></S.Icon>
+        <S.Icon><I.instagramIcon /></S.Icon>
       </S.IconWrapper>
       <S.Copies>&copy; Copyright Ping. All right reserved.</S.Copies>
     </div>

@@ -3,7 +3,7 @@ import * as S from './style';
 
 const SubmitButton = () => {
   return (
-    <S.Wrapper as='button'>Notify Me</S.Wrapper>
+    <S.Wrapper type='submit' value='Notify Me' />
   );
 };
 
